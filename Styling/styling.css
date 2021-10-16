@@ -1,0 +1,1460 @@
+*{
+    padding:0;
+    margin: 0;
+    
+    text-decoration: none;
+   
+
+}
+
+body{
+    width: 100vw;
+   
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100vw;
+    border-style: solid blue;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+main{
+    position: relative;
+}
+  header{
+      top:0;
+      height: 50px;
+      width: 100%;
+      background-color:  #3f575a ;
+      
+      
+     
+      position: fixed;
+    
+      z-index: 2;
+
+  }
+
+  @media screen and (max-width:600px) {
+    header{
+        top:0;
+        height: 50px;
+        width: 100vw;
+        background-color:  #3f575a ;
+        
+        
+       
+        position: fixed;
+      
+        z-index: 2;
+  
+    }
+  }
+
+  label.logo{
+      color: white;
+      font-size: 2.5vw;
+      line-height: 30px;
+      font-weight: bold;
+      float: left;
+      margin-left: 20px;
+      margin-top: 10px;
+
+  }
+  
+
+  nav ul{
+      list-style: none;
+      float: right;
+      
+      
+     
+  }
+
+  nav ul li{
+      display: inline-block;
+      margin-right: 2.2vw;
+      line-height: 50px;
+      font-size: 1.5vw;
+      position: relative;
+      right:5%;
+      
+
+  }
+
+  nav ul li a{
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      font-weight: bold;
+    
+  }
+
+.navBarMenu:hover{
+    background: wheat;
+    transition: .5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    label.logo{
+        font-size: 5vw;
+    }
+    .checkbtn{
+        display: block;
+        float: right;
+        margin-right: 2%;
+        margin-top: 1.1%;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #3f575a;
+        top: 50px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        position: relative;
+        left: 5%;
+        font-size: 3em;
+        
+        
+    }
+    .navBarMenu:hover{
+        background: chartreuse;
+        color: white;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+ #first-picture-div{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Pictures/first-div-picture.jpg");
+    background-size: cover;
+    background-position-x: 95%;
+    background-position-y: 20%;
+    position: fixed;
+    top: 50px;
+    z-index: -99;
+    filter: brightness(50%);
+  } 
+
+  @media screen and (max-width:600px) {
+    #first-picture-div{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../Pictures/first-div-picture.jpg");
+        background-size: cover;
+        background-position-x: 60%;
+        background-position-y:-100px;
+        position: fixed;
+        
+        z-index: -99;
+        filter: brightness(50%);
+      } 
+    
+  }
+    
+  #haukai-logo{
+      height: 53vh;
+      position: absolute;
+      background-image: url("../Pictures/HaukaiRestaurant.png");
+      background-size: cover;
+      width: 40vw;
+      top: 250px;
+     float: left;
+     left: -10%;
+      
+  }
+
+  @media screen and (max-width:600px) {
+    #haukai-logo{
+        height: 10%;
+        position: absolute;
+        background-image: url("../Pictures/HaukaiRestaurant.png");
+        background-position-x: 45%;
+       
+        background-size: cover;
+        width: 100%;
+        top: 10%;
+        right: 10%;
+        
+        padding: 0;
+        
+        
+        
+        
+       
+       
+       
+        
+    }
+  }
+
+  #main-content{
+      height: 750px;
+      position: relative;
+      width: 100vw;
+      background-color: #2A272A;
+      top: 600px;
+  }
+  
+
+  @media screen and (max-width:600px) {
+       #main-content{
+      height: 900px;
+      position: relative;
+      width: 100vw;
+      background-color: #2A272A;
+      top: 600px;
+  }
+  
+  }
+
+  
+
+  #main-content h1{
+      color: white;
+      float: left;
+      margin-top: 10%;
+      margin-left: 5%;
+      font-size:5em;
+      font-weight: 700;
+      
+  }
+  @media screen and (max-width:600px) {
+    #main-content h1{
+        color: white;
+        position: relative;
+        margin-top: 10%;
+        margin-left: 0 auto;
+        margin-right:0 auto;
+        font-size:40px;
+        font-weight: 700;
+        
+        display: block;
+        left: 25%;
+      
+        
+  
+        
+    }
+  }
+
+
+  
+  #main-content-text{
+      width: 300px;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      font-size: 1.4em;
+      font-weight: 700;
+      
+  }
+
+  @media screen and (max-width:600px){
+    #main-content-text{
+        width: 300px;
+        color: white;
+        position: absolute;
+        top: 72%;
+        left: 5%;
+        font-size: 1.1em;
+      font-weight: 700;
+       
+    }
+  
+  }
+  .main-content-pictures:hover{
+      transform: scale(1.05);
+      transition: 2s linear;
+      
+
+  }
+  
+
+  #pasta-div{
+      position:absolute;
+      height: 70%;
+      width: 15%;
+      background-image: url("../Pictures/pasta\ picture.jpg");
+      background-size: cover;
+      top: 10%;
+      left: 36%;
+      background-position-x: 40%;
+  }
+  @media screen and (max-width:600px) {
+    #pasta-div{
+        position:absolute;
+        height: 55%;
+        width: 30%;
+        background-image: url("../Pictures/pasta\ picture.jpg");
+        background-size: cover;
+        top: 15%;
+        left: 5%;
+        background-position-x: 40%;
+    }
+  }
+
+
+  #tomato-div{
+    position:absolute;
+    height: 70%;
+      width: 15%;
+    background-image: url("../Pictures/tomatoes.jpg");
+    background-size: cover;
+    top: 10%;
+    left: 55%;
+    background-position-x: 70%;
+  }
+  @media screen and (max-width:600px) {
+    #tomato-div{
+        position:absolute;
+        height: 55%;
+      width: 30%;
+        background-image: url("../Pictures/tomatoes.jpg");
+        background-size: cover;
+        top: 15%;
+        left: 40%;
+        background-position-x: 70%;
+      }
+  }
+
+
+  #spices-div{
+    position:absolute;
+    height: 70%;
+      width: 15%;
+    background-image: url("../Pictures/spices.jpg");
+    background-size: cover;
+    top: 10%;
+    right: 10%;
+    background-position-x: 70%;
+  }
+  @media screen and (max-width:600px) {
+    #spices-div{
+        position:absolute;
+        height: 55%;
+        width: 25%;
+        background-image: url("../Pictures/spices.jpg");
+        background-size: cover;
+        top: 15%;
+        right: 1%;
+        background-position-x: 70%;
+      }
+  }
+
+
+  #about-us{
+      position: relative;
+      height: 450px;
+      width: 100vw;
+      top: 600px;
+      background-color: #FF8C41;
+      
+      line-height: 120px;
+  }
+  @media screen and (max-width:600px) {
+    #about-us{
+        position: relative;
+        height: 700px;
+        width: 100vw;
+        top: 600px;
+        background-color: #FF8C41;
+        
+        line-height: 120px;
+    }
+  }
+
+
+ #about-us h2{
+     font-size: 150px;
+     float: left;
+     margin-left: 5%;
+     
+    
+     font-weight: 900;
+     
+ }
+
+ @media screen and (max-width:600px){
+    #about-us h2{
+        font-size: 50px;
+        float: left;
+        margin-left: 5%;
+        line-height: 1;
+       
+        font-weight: 900;
+        
+    }
+ }
+
+ #about-us p{
+     float: right;
+     
+     width: 45%;
+     height: 260px;
+     line-height: 30px;
+     margin-right: 50px;
+     position: relative;
+     margin-top: 12%;
+     font-size: 1.4em;
+     font-weight: 700;
+     padding: 20px;
+     float: right;
+    
+     color: #000000;
+ }
+ @media screen and (max-width:600px){
+    #about-us p{
+        float: right;
+        
+        width: 80%;
+        height: 100px;
+        line-height: 30px;
+        margin-right: 10px;
+        position: relative;
+        margin-top: 1%;
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 20px;
+        float: right;
+       
+        color: #000000;
+    }
+ }
+ #reservations-div{
+     position: relative;
+     top: 600px;
+     width: 100vw;
+     height: 500px;
+     background-image: url("../Pictures/reservationsSection.jpg");
+     background-size: cover;
+     background-position-y: 80%;
+     background-position-x: 40%;
+    
+ }
+
+ @media screen and (max-width:600px){
+    #reservations-div{
+        position: relative;
+        top: 600px;
+        width: 100vw;
+        height: 550px;
+        background-image: url("../Pictures/reservationsSection.jpg");
+        background-size: cover;
+        background-position-y: 80%;
+        background-position-x: 40%;
+       
+    }
+   
+ }
+
+ #reservations-div h3{
+     float: left;
+     margin-left: 100px;
+     width: 20px;
+     height: 300px;
+     text-shadow: 2px 2px 2px rgb(63, 63, 63);
+     display: inline;
+     padding: 1px;
+     line-height: 35px;
+     font-size: 50px;
+     font-weight: 900;
+     color: #FF8C41;
+
+ }
+
+  @media screen and (max-width:600px){
+    #reservations-div h3{
+        float: left;
+        margin-left: 10px;
+        width: 20px;
+        height: 300px;
+        text-shadow: 2px 2px 2px rgb(63, 63, 63);
+        display: inline;
+        padding: 1px;
+        line-height: 35px;
+        font-size: 20px;
+        font-weight: 900;
+        color: #FF8C41;
+        font-size: 2em;
+   
+    }
+   
+ }
+ #reservations-div p{
+    float: left;
+    margin-left: 20%;
+    position: relative;
+    top: 20%;
+  
+    
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgb(14, 14, 14);
+    width: 40%;
+    margin-top:110px;
+    font-size: 22px;
+    
+ }
+
+ @media screen and (max-width:600px){
+    #reservations-div p{
+        float: left;
+        margin-left: 20%;
+        position: absolute;
+        top: 5%;
+      
+        
+        color: #ffffff;
+        text-shadow: 2px 2px 2px rgb(14, 14, 14);
+        width: 80%;
+        margin-top:110px;
+        font-size: 22px;
+       
+        
+     }
+ }
+  #reservations-div a{
+      float: right;
+      border-style: solid;
+      width: 250px;
+      
+      margin-top: 25%;
+      height: 50px;
+      right: 34%;
+      padding-left: 35px;
+      font-size: 20px;
+      font-weight: 800;
+      padding-top: 8px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      color: #FF8C41;
+      position: absolute;
+  }
+
+  @media screen and (max-width:600px){
+    #reservations-div a{
+        float: right;
+        border-style: solid;
+        width: 200px;
+        
+        margin-top: 150%;
+        height: 50px;
+        right: 13%;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 800;
+        padding-top: 8px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        color: #FF8C41;
+        position: absolute;
+    }
+  
+     }
+ 
+  #bookingButton:hover{
+      background-color: black;
+      color:white;
+
+  }
+  #privacy-page{
+      width: 100vw;
+      height: 400px;
+      background-color: #FF8C41;
+      position: relative;
+      
+      top: 600px;
+  }
+  @media screen and (max-width:600px) {
+    #privacy-page{
+        width: 100vw;
+        height: 500px;
+        background-color: #FF8C41;
+        position: relative;
+        
+        top: 600px;
+    }
+      
+  }
+
+  #privacy-page h4{
+      float: right;
+      font-size: 4em;
+      font-weight: 800;
+      color: black;
+      margin-right: 10%;
+  }
+
+  #privacy-page p{
+    font-size: 1.4em;
+    font-weight: 700;
+     
+      display: block;
+      width: 50%;
+      float: left;
+      margin-top: 7%;
+      margin-left: 10%;
+      position: absolute;
+  }
+
+  @media screen and (max-width:600px) {
+    #privacy-page p{
+        font-size: 1.1em;
+        font-weight: 700;
+       
+        display: block;
+        width: 80%;
+        float: left;
+        margin-top: 60%;
+        margin-left: 20%;
+        position: absolute;
+    }
+   
+  }
+  #index-page-footer{
+      position: relative;
+      top:600px;
+      width: 100vw;
+      height: 100px;
+      background-color: #3f575a;
+     
+  }
+  @media screen and (max-width:600px) {
+ 
+    #index-page-footer{
+        position: absolute;
+        top: 122%;
+       
+        width: 100vw;
+        height: 100px;
+        background-color: #3f575a;
+        z-index: 22;
+        text-align: center;
+        
+       
+    }
+
+    #index-page-footer p {
+        text-align: center;
+        color: white;
+        margin-top: 5%;
+        font-weight: 600;
+        padding-top: 20PX;
+    }
+  }
+  #index-page-footer p {
+    text-align: center;
+    color: white;
+    
+    font-weight: 600;
+    padding-top: 40PX;
+}
+
+@media screen and (max-width:600px) {
+ 
+ 
+    #index-page-footer p {
+        text-align: center;
+        color: white;
+        margin-top: 5%;
+        font-weight: 600;
+        padding-top: 20PX;
+    }
+  }
+/* Contact Page Css*/
+#contact-main{
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    background-color: #2A272A;
+}
+
+
+@media screen and (max-width:600px) {
+    #contact-main{
+        width: 100vw;
+        height: 1400px;
+        position: relative;
+        background-color: #2A272A;
+    }
+    
+    
+}
+
+#contact-main h1{
+    position: relative;
+    font-size: 55px;
+    font-weight: 900;
+    top: 100px;
+    left: 10px;
+    color: white;
+}
+#map{
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    margin-top: 5%;
+    width: 45vw;
+    height: 470px;
+}
+
+@media screen and (max-width:600px) {
+    #map{
+        width: 80vw;
+        height: 15%;
+        top: 10%;
+        right: 8%;
+
+    }
+    
+}
+
+#contact-details{
+    position: relative;
+   left: 1%;
+    line-height: 50px;
+    top: 15%;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+
+}
+
+@media screen and (max-width:600px) {
+    #contact-details{
+        position: relative;
+       left: 1%;
+        display: inline-block;
+        top: 15%;
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        width: 100vw;
+        
+    
+    }
+    
+}
+
+#location-text{
+    position: relative;
+    left: 35%;
+    line-height: 50px;
+    top: -6%;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+
+}
+@media screen and (max-width:600px) {
+    #location-text{
+        position: relative;
+        left: 1%;
+        
+        top: 20%;
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+    
+    }
+    
+}
+#contact-main h2{
+    position: relative;
+    left: 1%;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    #contact-main h2{
+        position: relative;
+        left: 1%;
+        top: 20%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+}
+.contact-box{
+    width: 500px;
+    top: 55%;
+    left:-6%;
+   
+    
+    position: absolute;
+   
+    
+}
+
+@media screen and (max-width:600px) {
+    .contact-box{
+        width:100vw;
+        top: 60%;
+        left:-30%;
+       
+        
+        position: absolute;
+       
+        
+    }
+}
+
+.input-field{
+    width: 300px;
+    height: 50px;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    outline: none;
+}
+#messageForm{
+    margin: 100px;
+}
+#messageBox{
+    position: absolute;
+    left: 85%;
+    top: 18.5%;
+    height: 40.5%;
+    padding-left: 20px;
+    
+}
+
+@media screen and (max-width:600px) {
+    #messageBox{
+        position: absolute;
+        left:33%;
+        top: 70.5%;
+        height: 20.5%;
+        padding-left: 10px;
+        
+    }
+}
+
+#message-button{
+    width: 60%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    float: left;
+    margin-left: 20%;
+    border-radius: 8px;
+    background-color: #FF8C41;
+    color: white;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:600px) {
+    
+#message-button{
+    width: 92vw;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    float: left;
+    margin-left: 5%;
+    border-radius: 8px;
+    background-color: #FF8C41;
+    color: white;
+    cursor: pointer;
+    top: 140px;
+    position: relative;
+    
+}
+}
+
+
+#message-button:hover{
+    background-color: white;
+    color: #FF8C41;
+
+}
+
+#contact-page-footer{
+    position: relative;
+    top: 0px;
+    height: 80px;
+    width: 100vw;
+    background-color: #3f575a;
+    text-align: center;
+
+}
+#contact-page-footer p{
+    padding-top: 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: white;
+    
+}
+@media screen and (max-width:600px){
+    #contact-page-footer{
+        position: relative;
+        top: 0px;
+        height: 80px;
+        width: 100vw;
+        background: #3f575a; 
+           
+    }
+}
+
+
+/* open Hours Page*/
+
+
+ 
+ #hours-main-section{
+     background-color: #FF8C41;
+     height: 700px;
+     width: 100%;
+     
+
+
+ }
+
+ @media screen and (max-width:600px){
+    #hours-main-section{
+        background-color: #FF8C41;
+        height: 630px;
+        width: 100%;
+        
+   
+   
+    }
+ }
+
+ .vertical-line{
+    display: inline-block;
+    border-left: 6px solid rgb(255, 255, 255);
+    margin: 0 10px;
+    height: 385px;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+@media screen and (max-width:600px){
+    .vertical-line{
+        display: inline-block;
+        border-left: 6px solid rgb(255, 255, 255);
+        margin: 0 10px;
+        height: 355px;
+        position: absolute;
+        left: 45%;
+        top: 20%;
+        visibility: hidden;
+    }
+ }
+
+
+ #hours-main-section h1{
+     font-size: 5em;
+     font-weight: 800;
+     position: relative;
+     top: 40%;
+     color: white;
+     float: left;
+     margin-left: 1%;
+ }
+
+ @media screen and (max-width:600px) {
+     
+ #hours-main-section h1{
+    font-size: 3em;
+   
+    padding-right: 1px;
+    width: 30%;
+    font-weight: 800;
+    position: relative;
+    top: 10%;
+    color: white;
+}
+     
+ }
+ #hours-table{
+     position: absolute;
+     left: 45%;
+     top: 20%;
+     padding-right: 10px;
+     border-collapse: separate;
+     border-spacing: 40px 20px;
+     font-size: 1.5em;
+     font-weight:800;
+     color: white;
+ }
+
+ 
+ @media screen and (max-width:600px) {
+     
+    #hours-table{
+        position: relative;
+        top: 10%;
+        left: 1%;
+        
+        border-collapse: separate;
+        border-spacing: 5% 15%;
+        font-size: 16px;
+        font-weight:600;
+        color: rgb(248, 248, 248);
+    }
+}
+
+    
+ .openHoursColumn{
+    padding: 0px 10px;
+    border: rgb(12, 12, 12);
+
+ }
+ 
+ #open-hours-footer{
+     width: 100vw;
+     height: 100px;
+     background: #3f575a;
+     z-index: 12;
+     overflow: hidden;
+     text-align: center;
+    
+ }
+
+ #open-hours-footer p{
+     padding-top: 40px;
+     color: white;
+     font-weight: 600;
+
+
+ }
+
+
+
+ 
+
+ /*Reservation page*/
+
+ 
+.banner{
+    min-height: 700px;
+    width: 100%;
+    
+    background: linear-gradient(rgba(0,0,0,0.8),(rgba(0,0,0,0.8)));
+    background-image: url("../Pictures/reservation\ page\ background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: white;
+    
+
+  
+}
+
+.form-row{
+    
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin:10px 5px 10px 5px;
+    padding: 5px;
+    border-top-style: solid;
+    border:none;
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+
+form input[type = submit]{
+    color: white;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 6px;
+}
+.card-container{
+ display: grid;
+ grid-template-rows: 420px 420px;
+}
+.card-img{
+    background:url("../Pictures/restaURANT\ PICTURE.jpg") center/cover no-repeat;
+    text-align: center;
+}
+
+
+
+
+.banner h2{
+    padding-bottom: 20px;
+    color: black;
+   
+}
+.card-content{
+    background:white;
+    height: 300px;
+}
+
+.card-container h2{
+    text-align: center;
+    color:black;
+    padding:25px 0 10px 0;
+    font-weight: 300;
+}
+#reservationsForm{
+    padding-top:10px;
+    margin-top: 10px;
+    
+}
+
+
+
+ #reservations-page-footer{
+     position: relative;
+     top: 0px;
+     width: 100vw;
+     background-color: #3f575a;
+     height: 100px;
+     color: white;
+ }
+ @media screen and (max-width:600px){
+    #reservations-page-footer{
+        position: absolute;
+        top: 160%;
+        width: 100vw;
+        background-color: #3f575a;
+        height: 101px;
+        text-align: center;
+    }
+
+    #reservations-page-footer p{
+        position: relative;
+        top: 40%;
+
+    }
+
+    
+}
+   
+
+ /*Menu page code*/
+
+ #menu-main-section{
+     position: relative;
+     width: 100%;
+     height: 700px;
+     ;
+ }
+
+ .wrapper{
+     width: 90%;
+  
+     margin:100px auto;
+     font-size: 1.3em;
+     font-weight: 400;
+     
+
+ }
+
+ 
+ .title{
+     text-align: center;
+     margin-bottom: 60px;
+ }
+
+ .title h1{
+     text-transform: capitalize;
+     font-size: 36px;
+     position: relative;
+     display: inline-block;
+    
+
+ }
+ .title h1 span{
+     display:block;
+     font-size:18px;
+ }
+
+ .title h1::before{
+   position: absolute;
+   content:"";
+   width: 200px;
+   height: 2px;
+   background-color: rgb(46, 4, 75);
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   padding-bottom: 2px;
+}
+
+ .menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+ 
+}
+
+.single-menu{
+    flex-basis:40%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(252, 252, 252);
+    padding-left: 1%;
+
+}
+
+ #drinks-div{
+     width: 40%;
+ }
+
+
+ 
+
+@media only screen and (max-width:600px){
+    .single-menu{
+        flex-basis: 100%;
+    }
+
+
+}
+
+
+.single-menu:nth-child(){
+    border-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 7%;
+    top: 15px;
+
+
+}
+.single-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.single-menu img{
+    max-width: 190px;
+    margin-right: 5%;
+    border-radius: 5%;
+}
+
+
+
+.single-menu h4{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.single-menu h4 span{
+    float: right;
+    color: brown;
+    position: relative;
+   
+    
+}
+
+.drinks{
+    width: 45%;
+    
+    border-style: solid;
+   
+}
+
+
+
+ 
+#drinks-menu1{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+
+#red-drinks{
+    float: left;
+    margin-left: 2%;
+    position: relative;
+}
+
+#red-drinks ul{
+    list-style-type: none;
+    padding: auto;
+    margin: auto;
+}
+
+#red-drinks ul li span{
+    color: brown ;
+    float: right;
+    margin-right: 1px;
+}
+
+ 
+
+ 
+
+ .drinks-listing li{
+    font-size: 1em;
+    font-weight:550;
+
+}
+
+ .drinks-listing{
+    
+    list-style-type: none;
+    line-height: 3;
+    display: inline-block;
+    padding-left: 1%;
+    margin-bottom: 30px;
+        
+    
+}
+
+
+.drinks-listing li span{
+    color: brown;
+    float: right;
+    margin-right: 1px;
+    
+}
+#red-drinks-listing{
+    width: 33%;
+    margin-left: 5%;
+}
+
+@media screen and (max-width:600px) {
+    #red-drinks-listing{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+#white-drinks-listing{
+    float: right;
+    width: 35%;
+    margin-right: 10%;
+    
+    position: relative;
+}
+@media screen and (max-width:600px) {
+    #white-drinks-listing{
+        float: right;
+        width: 80%;
+        margin-right: 15%;
+        
+        position: relative;
+    }
+}
+
+#beer-and-cider{
+    width: 33%;
+    margin-left: 5%;
+}
+@media screen and (max-width:600px) {
+
+    #beer-and-cider{
+        width: 83%;
+        margin-left: 5%;
+    }
+    
+}
+#non-alcoholic-drinks{
+    float: right;
+    width: 35%;
+    margin-right: 10%;
+    
+    position: relative;
+   
+}
+@media screen and (max-width:600px) {
+
+    #non-alcoholic-drinks{
+        float: right;
+    width: 80%;
+    margin-right:15%;
+    
+    position: relative;
+    }
+    
+}
+
+
+
+#menu-page-footer{
+    position: relative;
+    width: 100%;
+    background-color: #3f575a;
+    height: 100px;
+    top: 2050px;
+    padding-top: 3%;
+        font-size:1em;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+}
+
+#drinks-menu1{
+    margin-bottom: 10px;
+    position: relative;
+}
+.drinks-listing li:nth-child(1){
+    font-size: 1.7em;
+    font-weight: 600;
+}
+ @media only screen and (max-width:600px){
+    #menu-page-footer{
+        position: relative;
+        top:5100px;
+       
+        height: 100px;
+        width: 100%;
+        background-color: #3f575a ;
+        
+        padding-top: 10%;
+        font-size:1em;
+        font-weight: 600;
+    }
+ }
